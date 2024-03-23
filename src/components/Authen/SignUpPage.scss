@@ -1,0 +1,101 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.background-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.background-container {
+    padding: 6% 8%;
+    padding-top: 4%;
+
+    .login-container {
+        background-color: rgba(123, 132, 132, 0.379);
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        padding: 4%;
+        padding-bottom: 5%;
+        box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.25);
+       
+
+        .login-form {
+            width: 80%;
+            max-width: 600px;
+            min-width: 300px;
+            margin: 0 auto;
+    
+            .login-title {
+                text-align: center;
+                font-size: 2.5em;
+                font-weight: 700;
+                margin-bottom: 11%;
+            }
+
+            .form-label {
+                font-weight: 600;
+            }
+
+            .checkbox-and-resetpw {
+                display: flex;
+                align-items: baseline;
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                }
+
+                .check-pw {
+                    font-weight: 600;
+                }
+
+                .form-text {
+                    text-align: right;
+                    font-style: italic;
+                    font-size: 1.05em;
+                    font-weight: 600;
+                }
+            }
+
+            .login-btn {
+                text-align: center;
+                margin-top: 8%;
+
+                button {
+                    width: 40%;
+                    border-radius: 100px;
+                    background-color: rgb(17, 129, 149);
+                    color: rgb(234, 228, 228);
+                    font-weight: 600;
+                    border: 1.5px solid rgb(141, 130, 130);
+                    margin-left: 0.7px;
+
+                    &:hover {
+                        background-color: rgb(6, 80, 94);
+                    }
+                }
+
+                .signuplink {
+                    cursor: pointer;
+                    color: orange;
+                    transition: color 0.3s;
+                }
+
+                .signuplink:hover {
+                    color: violet;
+                }
+            }
+
+            .password-input-container {
+                position: relative;
+                
+                .password-toggle {
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;                  
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.background-image {
+  // background-image: url('https://www.sofagalaxy.ie/wp-content/uploads/2021/05/Wersal-20-03-12-Tiga-Bigsofa-Riviera-16_s.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('https://www.sofagalaxy.ie/wp-content/uploads/2021/05/Wersal-20-03-12-Tiga-Bigsofa-Riviera-16_s.jpg');
+
+  background-size: cover;
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.upper-section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  padding: 2rem;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.content-section {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  gap: 1%;
+  justify-content: space-between;
+  padding: 2rem 0;
+
+  .card-upper {
+    padding: 0.5rem 0;
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-footer {
+    padding: 0.5rem 0;
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.span-breadcrumb {
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 600;
+  }
+}
